@@ -27,13 +27,31 @@
 
     <button id="clicker" class="btn btn-primary">Area</button>
 
-    <p id="result"></p>
+    
 
   </main>
   <script>
-    
+    console.log('SCRIPT START')
+    console.log('Declare testable functions.....................')
+    function radius(radius) {
+      return Math.PI*radius*radius;
+    }
+    console.log('Defined area=' + area)
+    console.log('Declare event listeners .......................')
+    document.getElementById('clicker').addEventListener('click', function () {
+      const s = document.getElementById('guest').value
+      const i = parseInt(document.getElementById('firstNumber').value)
+      console.log('i=' + i)
+      const j = parseInt(document.getElementById('secondNumber').value)
+      console.log('j=' + j)
+      const ans = s + ', your sum is ' + add(i, j) + '.'
+      document.getElementById('result').innerHTML = ans
+    })
+    console.log('SCRIPT END')
   
   </script>
+
+
 
 
   <!-- JQuery -->
