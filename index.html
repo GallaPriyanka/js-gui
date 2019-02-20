@@ -27,6 +27,8 @@
 
     <button id="clicker" class="btn btn-primary">Area</button>
 
+
+    <p id="result"></p>
     
 
   </main>
@@ -39,12 +41,8 @@
     console.log('Defined area=' + area)
     console.log('Declare event listeners .......................')
     document.getElementById('clicker').addEventListener('click', function () {
-      const s = document.getElementById('guest').value
-      const i = parseInt(document.getElementById('firstNumber').value)
-      console.log('i=' + i)
-      const j = parseInt(document.getElementById('secondNumber').value)
-      console.log('j=' + j)
-      const ans = s + ', your sum is ' + add(i, j) + '.'
+
+      const ans = 'Your area is ' + area(document.getElementById('firstNumber')) + '.'
       document.getElementById('result').innerHTML = ans
     })
     console.log('SCRIPT END')
