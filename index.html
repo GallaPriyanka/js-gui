@@ -36,13 +36,14 @@
     console.log('SCRIPT START')
     console.log('Declare testable functions.....................')
     function area(radius) {
-      return Math.PI*radius*radius;
+      return (Math.PI*radius*radius);
+      
     }
     console.log('Defined area=' + area)
     console.log('Declare event listeners .......................')
     document.getElementById('clicker').addEventListener('click', function () {
 
-      const ans = 'Your area is ' + area(document.getElementById('firstNumber')) + '.'
+      const ans = 'Your area is ' + area(document.getElementById('firstNumber').value) + '.'
       document.getElementById('result').innerHTML = ans
     })
     console.log('SCRIPT END')
