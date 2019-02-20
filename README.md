@@ -5,7 +5,7 @@
 ## Links
 
 - [Demo](https://profcase.github.io/js-gui/)
-- [Source](https://github.com/profcase/js-gui)
+- [Source](https://github.com/GallaPriyanka/js-gui)
 
 ## Requirements
 
